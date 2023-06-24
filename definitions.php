@@ -4,14 +4,9 @@
 	class plgContentDefinitions extends JPlugin 
 	{
 		function onContentPrepare($content, $article, $params, $limit){	
-		
-					$re = '{def}';
-					
+					$re = '{def}';					
 					$doc = JFactory::getDocument();
-
 					$doc->addStyleSheet('plugins/content/definitions/style.css');
-
-
 					$i=0;
 					JLoader::register('FieldsHelper', JPATH_ADMINISTRATOR . '/components/com_fields/helpers/fields.php');
 					$customFields = FieldsHelper::getFields('com_users.user', JFactory::getUser(), true);
@@ -21,14 +16,7 @@
 					$t = (array)json_decode($a[2]->value);
 					$chaine = '<div class="definitions"><div class="titre">Définitions en lien avec le matériel</div>';
 					foreach ($t as $maligne){
-						/*$chaine .='<hr><div class="une-ligne-definition">';
-						
-						$chaine .= '<div class="un-acronyme" id="un-acronyme-'.$i.'">'.$maligne->def_acronyme."</div>";
-						$chaine .= '<div class="un-mot" id="un-mot-'.$i.'">'.$maligne->def_mot."</div>";
-						$chaine .= '<div class="une-definition" id="une-definition-'.$i.'">'.$maligne->def_definition."</div>";
-						$chaine .= '<div class="une-note" id="une-note-'.$i.'">'.$maligne->def_notes."</div>";
-						
-						$chaine .='</div></hr>';*/
+
 						$chaine .= '<details>';
 						$chaine .= '<summary>'.$maligne->def_mot.'<acronym>'.$maligne->def_acronyme.'</acronym></summary>';
 						$chaine .= '<p>';

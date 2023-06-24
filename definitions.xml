@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.1" type="plugin" group="Content">
+	<name>Définitions</name>
+	<author>Sebastien LHUILLIER</author>
+	<creationDate>Janvier 2023</creationDate>
+	<copyright>Sébastien LHUILLIER</copyright>
+	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
+	<authorEmail>sebastien.lhuillier+joomla@gmail.com</authorEmail>
+	<authorUrl>www.sebastien-lhuillier.com</authorUrl>
+	<version>1.0</version>
+	<description>Afficher les définitions du matériel</description>
+	<files>
+		<filename plugin="definitions">definitions.php</filename>
+		<filename>definitions.xml</filename>	
+		<filename>style.css</filename>		
+	</files>	
+</extension>

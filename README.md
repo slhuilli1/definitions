@@ -8,3 +8,5 @@ This plugin allows you to display in a dedicated article, all the words and thei
 This plugin was developed in the context of a very particular professional activity where personnel covering a wide professional spectrum, from IT to oil technology, do not necessarily know all the professional terminology. This plugin therefore allows you to list the term and its associated definition in an article.
 Using this plugin is very simple, you must first create a reputable field as I show on the attached screenshot, and integrate this plugin into joomla.
 This plugin does not include the installation tool, you must install in developer mode by the "discover" command.
+
+<img src="https://github.com/slhuilli1/definitions/blob/main/PrntScr_fields_created.jpg?raw=true">
